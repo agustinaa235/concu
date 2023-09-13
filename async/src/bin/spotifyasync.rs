@@ -1,6 +1,8 @@
 use reqwest;
 use reqwest::header::{ACCEPT, AUTHORIZATION, CONTENT_TYPE};
 use serde::{Deserialize, Serialize};
+use dotenv::dotenv;
+use std::env;
 
 #[derive(Serialize, Deserialize, Debug)]
 struct ExternalUrls {
@@ -55,8 +57,13 @@ fn print_tracks(tracks: Vec<&Track>) {
 // tokio let's us use "async" on our main function
 #[tokio::main]
 async fn main() {
-    // chaining .await will yield our query result
-    let auth_token = "BQCgRa_6ZEgO7ZZYy5sCel-dN50n2X8nyZVXUnzkq6Q8eEp9y2v0u0HdqVa0OvKZLeA0yEqHDxRIQtqn30tRK9nsxU-yfmAYEXl_9NwM8HcHcNoBijY";
+
+    dotenv().ok();
+    let auth_token = match env::var_os("TOKEN") {
+        Some(v) => v.into_string().unwrap(),
+        None => panic!("$TOKEN is not set")
+    };
+  
 
     let url = format!(
         "https://api.spotify.com/v1/search?q={query}&type=track,artist",
