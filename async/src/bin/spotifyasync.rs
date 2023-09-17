@@ -68,7 +68,7 @@ async fn main() {
     let url = format!(
         "https://api.spotify.com/v1/search?q={query}&type=track,artist",
         // go check out her latest album. It's 🔥
-        query = "Little Simz"
+        query = "duki"
     );
 
     let client = reqwest::Client::new();
