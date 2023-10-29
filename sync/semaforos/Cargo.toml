@@ -1,0 +1,25 @@
+[package]
+name = "semaforos"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "barbero"
+path = "src/barbero.rs"
+
+[[bin]]
+name = "marble_game"
+path = "src/marble_games.rs"
+
+[[bin]]
+name = "filosofos"
+path = "src/filosofos.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7"
+std-semaphore = "0.1"
+num-traits = "0.2"
+num-derive = "0.3"

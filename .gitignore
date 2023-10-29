@@ -1,1 +1,4 @@
-*/target
+async/target/
+sync/barreras/target
+fork-join/target/
+sync/semaforos/target/
