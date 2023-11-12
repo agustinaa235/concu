@@ -1,0 +1,21 @@
+[package]
+name = "convars"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name = "semaforo_con_convars"
+path = "src/semaforo_con_convars.rs"
+
+[[bin]]
+name = "producer_consumer"
+path = "src/producer_consumer.rs"
+
+[[bin]]
+name = "read_write"
+path = "src/read_write.rs"
+
+[dependencies]
