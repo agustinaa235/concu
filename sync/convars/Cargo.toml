@@ -18,4 +18,8 @@ path = "src/producer_consumer.rs"
 name = "read_write"
 path = "src/read_write.rs"
 
+[[bin]]
+name = "read_write_writers_privilage"
+path = "src/read_write_writers_privilage.rs"
+
 [dependencies]
