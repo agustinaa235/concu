@@ -16,6 +16,10 @@ path = "src/marble_games.rs"
 name = "filosofos"
 path = "src/filosofos.rs"
 
+[[bin]]
+name = "contador"
+path = "src/contador.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
