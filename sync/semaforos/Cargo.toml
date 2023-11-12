@@ -20,6 +20,10 @@ path = "src/filosofos.rs"
 name = "contador"
 path = "src/contador.rs"
 
+[[bin]]
+name = "productor_consumidor"
+path = "src/productor_consumidor.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
