@@ -22,7 +22,7 @@ impl Semaforo {
         }).unwrap();
         println!("Puedo tomar semaforo");
         *aux -= 1;
-        self.cvar.notify_all();
+        self.cvar.notify_one();
     }
 
     pub fn release(&self){
@@ -30,7 +30,7 @@ impl Semaforo {
         println!("Libero semaforo");
         *contador += 1;
 
-        self.cvar.notify_all();
+        self.cvar.notify_one();
     }
 }
 

@@ -3,7 +3,7 @@ use futures::future::join_all;
 
 async fn async_main() {
  
-    let urls = vec!["https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"; 10];
+    let urls = vec!["https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"; 100];
     let client = reqwest::Client::new();
     let apis_result: Vec<_> = urls
     .iter()

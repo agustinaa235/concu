@@ -16,7 +16,7 @@ async fn request_function(url: &str) -> f64{
 
 
 async fn async_main(){
-    let n = 10;
+    let n = 100;
     println!("Proceso main");
 
     let urls = vec!["url"; n];

@@ -7,6 +7,14 @@ edition = "2021"
 [[bin]]
 name = "cantidad_lineas"
 path = "src/cantidad_lineas.rs"
+
+[[bin]]
+name = "cantidad_letras_por_linea"
+path = "src/cantidad_letras_por_linea.rs"
+
+[[bin]]
+name = "cantidad_lineas_por_archivo_sin_rayon"
+path = "src/cantidad_lineas_por_archivo_sin_rayon.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
