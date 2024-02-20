@@ -19,3 +19,5 @@ path = "src/cantidad_lineas_por_archivo_sin_rayon.rs"
 
 [dependencies]
 rayon = "1.5.1"
+log = { version = "0.4", features = ["max_level_debug", "release_max_level_warn"] }
+env_logger = "0.10.0"

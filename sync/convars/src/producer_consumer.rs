@@ -34,6 +34,7 @@ fn producer_process(pair_agent_producer: Arc<(Mutex<usize>, Condvar)>){
         }).unwrap();
         *guard += 1;
         println!("Produzco {:?}", *guard);
+        thread::sleep(Duration::from_secs(1));
         cvar.notify_all();
     }
 }
@@ -48,6 +49,7 @@ fn consumer_process(pair_agent_consumer:  Arc<(Mutex<usize>, Condvar)>){
     }).unwrap();
         *guard -=1;
         println!("Consumo {:?}", *guard);
+        thread::sleep(Duration::from_secs(4));
         cvar.notify_all();
     }
 }

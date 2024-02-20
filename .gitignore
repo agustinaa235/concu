@@ -3,3 +3,5 @@ sync/barreras/target
 fork-join/target/
 sync/semaforos/target/
 sync/convars/target
+finales/target
+locks/target

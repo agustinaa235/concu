@@ -1,0 +1,55 @@
+[package]
+name = "finales"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "read_file_fork_join"
+path = "src/read_file_fork_join.rs"
+
+[[bin]]
+name = "productor_consumidor_actores"
+path = "src/productor_consumidor_actores.rs"
+
+[[bin]]
+name = "actores_combustible"
+path = "src/actores_combustible.rs"
+
+[[bin]]
+name = "producer_consumer_channels"
+path = "src/producer_consumer_channels.rs"
+
+[[bin]]
+name = "eleccion_del_lider_anillo"
+path = "src/eleccion_del_lider_anillo.rs"
+
+[[bin]]
+name = "file_readers_actors"
+path = "src/file_readers_actors.rs"
+
+[[bin]]
+name = "aerolineas_actores"
+path = "src/aerolineas_actores.rs"
+
+[[bin]]
+name = "votacion_actores"
+path = "src/votacion_actores.rs"
+
+[[bin]]
+name = "productor_consumidor_semaforo"
+path = "src/productor_consumidor_semaforo.rs"
+
+[[bin]]
+name = "productor_consumidor_monitor"
+path = "src/productor_consumidor_monitor.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8"
+tokio = { version = "1.15", features = ["full"] }
+actix = "0.11.1"
+actix-rt = "2.0" # <-- Runtime for actix
+std-semaphore = "0.1"
+num-traits = "0.2"
+num-derive = "0.3"
